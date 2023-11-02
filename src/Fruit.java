@@ -7,6 +7,13 @@ public class Fruit {
     public boolean isRipe;
     public int numBush;
 
+    public Fruit(String paramCol, String paramShape, int paramSeeds, boolean paramRipe, int paramBush){
+        color = paramCol;
+        shape = paramShape;
+        numSeeds = paramSeeds;
+        isRipe = paramRipe;
+        numBush = paramBush;
+    }
     public void printInfo(){
         System.out.println(color);
         System.out.println(shape);
@@ -14,7 +21,5 @@ public class Fruit {
         System.out.println(isRipe);
         System.out.println(numBush);
     }
-    public Fruit(){
 
-    }
 }

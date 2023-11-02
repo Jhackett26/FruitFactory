@@ -5,28 +5,24 @@ public class Main {
     // constructor method
     // a constructor is a method with no return type that has the same name as the class it's in
     public Main(){
-        // strawberry - red, triangle, 200, yes 20
-        Fruit strawberry;
-        strawberry = new Fruit();
-        strawberry.color ="red";
-        strawberry.shape = "triangle";
-        strawberry.numSeeds = 200;
-        strawberry.isRipe = true;
-        strawberry.numBush = 20;
 
+        Fruit strawberry;
+        strawberry = new Fruit("red","triangle",200,true,20);
         strawberry.printInfo();
 
-        // apple - red, sphere, 10, yes, 15
         System.out.println(' ');
         Fruit apple;
-        apple = new Fruit();
-
-        apple.color ="red";
-        apple.shape = "sphere";
-        apple.numSeeds = 10;
-        apple.isRipe = true;
-        apple.numBush = 15;
-
+        apple = new Fruit("red","sphere",10,true,15);
         apple.printInfo();
+
+        System.out.println(' ');
+        Fruit mango;
+        mango = new Fruit("yellowish","oval",1,false,100);
+        mango.printInfo();
+
+        System.out.println(' ');
+        Fruit orange;
+        orange = new Fruit("orange","sphere",10,false,50);
+        orange.printInfo();
     }
 }
